@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Формуляр отзыва об отеле</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <img src="hotel.jpg" alt="Hotel's image">
+    </div>
+    <header>
+      <h1>Формуляр отзыва об отеле</h1>
+      <p>
+        Спасибо, что остановились у нас. Пожалуйста, оставьте отзыв о вашем недавнем
+        пребывании.
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+        <fieldset>
+          <legend>Персональная информация</legend>
+          <label for="full-name">Имя (обязательно):</label>
+          <input type="text" id="full-name" name="name" placeholder="Иван Иванов" required size="20">
+
+          <label for="email">Адрес электронной почты (обязательно):</label>
+          <input
+            placeholder="иванов@майл.ру"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Возраст (необязательно):</label>
+          <input type="number" name="age" id="age" min="3" max="100" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Вы впервые остановились в нашем отеле?</legend>
+          <label for="yes-option">Да</label>
+          <input id="yes-option" type="radio" name="hotel-stay" />
+          <label for="no-option">Нет</label>
+          <input id="no-option" type="radio" name="hotel-stay" />
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Почему вы решили остановиться в нашем отеле? (Отметьте все подходящие варианты)
+          </legend>
+
+          <label for="ads">Реклама в социальных сетях</label>
+          <input type="checkbox" id="ads" name="ads" value="ads" />
+
+          <label for="recommendation">Персональная рекомендация</label>
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="recommendation"
+            value="recommendation"
+          />
+
+          <label for="location">Расположение</label>
+          <input type="checkbox" id="location" name="location" value="location" />
+
+          <label for="reputation">Репутация</label>
+          <input
+            checked
+            type="checkbox"
+            id="reputation"
+            name="reputation"
+            value="reputation"
+          />
+
+          <label for="price">Цена</label>
+          <input type="checkbox" id="price" name="price" value="price" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Рейтинги</legend>
+
+          <label for="service">Как Вы оцените сервис?</label>
+
+          <select name="service" id="service">
+            <option value="poor">Плохо</option>
+            <option value="satisfactory">Удовлетворительно</option>
+            <option value="good">Хорошо</option>
+            <option value="very-good">Очень Хорошо</option>
+            <option selected value="excellent">Отлично</option>
+          </select>
+
+          <label for="food">Как Вы оцените питание?</label>
+
+          <select name="food" id="food">
+            <option value="poor">Плохо</option>
+            <option value="satisfactory">Удовлетворительно</option>
+            <option value="good">Хорошо</option>
+            <option value="very-good">Очень Хорошо</option>
+            <option selected value="excellent">Отлично</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Комментарии</legend>
+          <label for="comments">Поделитесь комментариями с нами о Вашем пребывании.</label>
+          <br>
+          <textarea cols="50" rows="10" name="comments" id="comments"></textarea>
+          <br>
+          <button type="submit">Отправить</button>
+        </fieldset>
+
+      </form>
+    </main>
+  </body>
+</html>

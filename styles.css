@@ -1,0 +1,9 @@
+legend {
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+	height: 400px;
+	object-position: top;
+}
