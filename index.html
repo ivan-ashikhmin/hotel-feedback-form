@@ -22,7 +22,7 @@
           <legend>Персональная информация</legend>
           <label for="full-name">Имя (обязательно):</label>
           <input type="text" id="full-name" name="name" placeholder="Иван Иванов" required size="20">
-
+          <br>
           <label for="email">Адрес электронной почты (обязательно):</label>
           <input
             placeholder="иванов@майл.ру"
@@ -32,6 +32,7 @@
             name="email"
             size="20"
           />
+          <br>
           <label for="age">Возраст (необязательно):</label>
           <input type="number" name="age" id="age" min="3" max="100" />
         </fieldset>
@@ -46,12 +47,12 @@
 
         <fieldset>
           <legend>
-            Почему вы решили остановиться в нашем отеле? (Отметьте все подходящие варианты)
+            Почему вы выбрали наш отель? (Отметьте все подходящие варианты)
           </legend>
 
           <label for="ads">Реклама в социальных сетях</label>
           <input type="checkbox" id="ads" name="ads" value="ads" />
-
+          <br>
           <label for="recommendation">Персональная рекомендация</label>
           <input
             type="checkbox"
@@ -59,10 +60,10 @@
             name="recommendation"
             value="recommendation"
           />
-
+          <br>
           <label for="location">Расположение</label>
           <input type="checkbox" id="location" name="location" value="location" />
-
+          <br>
           <label for="reputation">Репутация</label>
           <input
             checked
@@ -71,7 +72,7 @@
             name="reputation"
             value="reputation"
           />
-
+          <br>
           <label for="price">Цена</label>
           <input type="checkbox" id="price" name="price" value="price" />
         </fieldset>
@@ -88,7 +89,7 @@
             <option value="very-good">Очень Хорошо</option>
             <option selected value="excellent">Отлично</option>
           </select>
-
+          <br>
           <label for="food">Как Вы оцените питание?</label>
 
           <select name="food" id="food">
@@ -102,7 +103,7 @@
 
         <fieldset>
           <legend>Комментарии</legend>
-          <label for="comments">Поделитесь комментариями с нами о Вашем пребывании.</label>
+          <label for="comments">Поделитесь впечатлениями с нами о Вашем пребывании.</label>
           <br>
           <textarea name="comments" id="comments"></textarea>
           <br>
