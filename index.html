@@ -20,10 +20,10 @@
       <form method="POST" action="https://hotel-feedback.freecodecamp.org">
         <fieldset>
           <legend>Персональная информация</legend>
-          <label for="full-name">Имя (обязательно):</label>
+          <label for="full-name">Имя<span style="color: red;">*</span>:</label>
           <input type="text" id="full-name" name="name" placeholder="Иван Иванов" required size="20">
           <br>
-          <label for="email">Адрес электронной почты (обязательно):</label>
+          <label for="email">Адрес электронной почты<span style="color: red">*</span>:</label>
           <input
             placeholder="иванов@майл.ру"
             required
@@ -35,6 +35,8 @@
           <br>
           <label for="age">Возраст (необязательно):</label>
           <input type="number" name="age" id="age" min="3" max="100" />
+          <br>
+          <span style="color: red">*</span> - Обязательно к заполнению.
         </fieldset>
 
         <fieldset>
